@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lorenzo Guedes Marca | Desenvolvedor Web</title>
+  <meta name="description" content="Portfólio de Lorenzo Guedes Marca, estudante de Desenvolvimento de Software no SENAI. HTML, CSS, JavaScript, React e UX/UI." />
+  <link rel="icon" href="logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-outline" id="cursorOutline" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav-in">
+      <a href="#inicio" class="brand"><img src="logo.jpg" alt="" width="32" height="32" />Lorenzo</a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#inicio">Início</a><a href="#sobre">Sobre</a><a href="#skills">Skills</a><a href="#projetos">Projetos</a><a href="#techduo">Tech Duo</a><a href="#contato">Contato</a>
+      </nav>
+      <a href="#contato" class="btn btn-primary btn-sm">Contratar</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-in">
+        <div class="hero-text">
+          <p class="tag">Desenvolvedor web em formação</p>
+          <h1>Oi, eu sou o <span class="accent">Lorenzo</span>.<br />Construo coisas para a web.</h1>
+          <p class="lead">Tenho 16 anos e estudo Desenvolvimento de Software no SENAI. Crio sites e aplicações com HTML, CSS, JavaScript e React, com atenção ao design e à experiência de quem usa.</p>
+          <div class="hero-cta">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="https://wa.me/5548984514714?text=Olá%20Lorenzo" class="btn btn-ghost" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+          <div class="tech-row" aria-label="Tecnologias">
+            <img src="html.png" alt="HTML5" /><img src="css-3.png" alt="CSS3" /><img src="js.png" alt="JavaScript" /><img src="react.jpg" alt="React" class="react-ico" /><img src="ux.png" alt="UX/UI" class="ico-adapt" />
+          </div>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-ring"><img src="foto-lorenzo.jpg" alt="Foto de Lorenzo Guedes Marca" /></div>
+          <div class="code-card glow-card" aria-hidden="true">
+<pre><span class="k">const</span> lorenzo = {
+  curso: <span class="s">"SENAI"</span>,
+  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>,
+          <span class="s">"JS"</span>, <span class="s">"React"</span>],
+  foco: <span class="s">"UX/UI"</span>
+};</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container about">
+        <div class="reveal">
+          <h2>Sobre mim</h2>
+          <p>Sou estudante do 1º ano do Ensino Médio integrado ao curso de Desenvolvimento de Software no SENAI. Aprendo construindo: cada projeto abaixo nasceu de um exercício e virou uma aplicação publicada.</p>
+          <p>Este portfólio foi feito do zero com tecnologias nativas da web, sem frameworks, e mostra a minha evolução técnica até aqui.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat glow-card"><strong>9</strong><span>Projetos publicados</span></div>
+          <div class="stat glow-card"><strong>5</strong><span>Tecnologias</span></div>
+          <div class="stat glow-card"><strong>16</strong><span>Anos de idade</span></div>
+          <div class="stat glow-card"><strong>2026</strong><span>Em evolução</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="reveal">Tecnologias que uso</h2>
+        <div class="skills">
+          <article class="skill glow-card reveal"><img src="html.png" alt="" /><h3>HTML5</h3><p>Estrutura semântica e acessível.</p></article>
+          <article class="skill glow-card reveal"><img src="css-3.png" alt="" /><h3>CSS3</h3><p>Grid, Flexbox, variáveis e responsividade.</p></article>
+          <article class="skill glow-card reveal"><img src="js.png" alt="" /><h3>JavaScript</h3><p>ES6+, DOM, APIs e persistência local.</p></article>
+          <article class="skill glow-card reveal"><img src="react.jpg" alt="" class="react-ico" /><h3>React</h3><p>Componentes e interfaces dinâmicas.</p></article>
+          <article class="skill glow-card reveal"><img src="ux.png" alt="" class="ico-adapt" /><h3>UX/UI</h3><p>Layouts claros e focados no usuário.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="reveal">Projetos</h2>
+        <p class="sub reveal">Clique em um card para abrir o projeto publicado.</p>
+        <div class="projects">
+          <a class="project glow-card reveal featured" href="https://academia-dusky-alpha.vercel.app/" target="_blank" rel="noopener">
+            <span class="chip">Novo</span><h3>Forge Fitness</h3><p>Site de academia 24h com planos, grade de aulas por dia, calculadora de IMC, depoimentos e login.</p><span class="more">Ver projeto ↗</span>
+          </a>
+          <a class="project glow-card reveal" href="https://chic-starship-c91ca0.netlify.app/" target="_blank" rel="noopener"><h3>Loja Virtual</h3><p>E-commerce com catálogo de produtos e carrinho.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://cosmic-blancmange-44a040.netlify.app/" target="_blank" rel="noopener"><h3>CRUD de Tarefas</h3><p>Lista de tarefas para criar, editar e excluir.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://frabjous-biscuit-dd575c.netlify.app/" target="_blank" rel="noopener"><h3>Previsão do Tempo</h3><p>Consulta o clima de uma cidade consumindo uma API.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://joyful-entremet-58441a.netlify.app/" target="_blank" rel="noopener"><h3>Conversor de Moedas</h3><p>Converte valores entre moedas com cotação atual.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://bright-truffle-a07e19.netlify.app/" target="_blank" rel="noopener"><h3>Calculadora de IMC</h3><p>Calcula o índice de massa corporal e a classificação.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://nimble-gumdrop-1cf358.netlify.app/" target="_blank" rel="noopener"><h3>Calculadora Web</h3><p>Calculadora com as operações básicas.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://nimble-gumdrop-1cf358.netlify.app/" target="_blank" rel="noopener"><h3>Invencível</h3><p>Fan page da série, com foco em layout e identidade visual.</p><span class="more">Ver projeto ↗</span></a>
+          <a class="project glow-card reveal" href="https://cheerful-taffy-539120.netlify.app/" target="_blank" rel="noopener"><h3>Site de Restaurante</h3><p>Página institucional com cardápio e contato.</p><span class="more">Ver projeto ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="techduo" class="section">
+      <div class="container duo glow-card reveal">
+        <img src="logo.jpg" alt="Logo da Tech Duo" class="duo-logo" width="160" height="160" />
+        <div class="duo-text">
+          <h2>Tech Duo</h2>
+          <p>A Tech Duo é a nossa dupla de tecnologia: projetos, aprendizados e novidades de desenvolvimento web compartilhados em um só lugar. Acompanhe os bastidores e as próximas ideias no Instagram.</p>
+          <a href="https://www.instagram.com/tech_duo.ml" class="btn btn-primary" target="_blank" rel="noopener">Seguir @tech_duo.ml</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section alt">
+      <div class="container contact">
+        <div class="reveal">
+          <h2>Vamos conversar?</h2>
+          <p>Estou aberto a estágios, projetos e trocas de ideia. Me chame pelo canal que for melhor para você.</p>
+          <a href="mailto:lorenzoguedesmarca@hotmail.com" class="btn btn-primary">lorenzoguedesmarca@hotmail.com</a>
+        </div>
+        <div class="socials reveal">
+          <a class="social glow-card" href="https://wa.me/5548984514714?text=Olá%20Lorenzo" target="_blank" rel="noopener"><img src="whatsapp.png" alt="" />WhatsApp</a>
+          <a class="social glow-card" href="https://www.linkedin.com/in/lorenzo-guedes-marca-122476416" target="_blank" rel="noopener"><img src="linkedin.png" alt="" />LinkedIn</a>
+          <a class="social glow-card" href="https://github.com/Lorenzomarca" target="_blank" rel="noopener"><img src="github.png" alt="" class="ico-adapt" />GitHub</a>
+          <a class="social glow-card" href="mailto:lorenzoguedesmarca@hotmail.com"><img src="gmail.png" alt="" />E-mail</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-in"><span>© 2026 Lorenzo Guedes Marca</span><a href="https://www.instagram.com/tech_duo.ml" target="_blank" rel="noopener">Instagram @tech_duo.ml</a></div>
+  </footer>
+
+  <button class="style-btn" id="styleBtn" aria-label="Personalizar estilo">⚙ Estilo</button>
+  <aside class="style-panel" id="stylePanel" aria-label="Personalizar estilo">
+    <h4>Personalizar</h4>
+    <label class="row"><span id="themeLabel">Modo Claro</span>
+      <span class="switch"><input type="checkbox" id="themeToggle" /><i></i></span>
+    </label>
+    <div class="colors" role="group" aria-label="Cor de destaque">
+      <button class="color-opt" data-color="#8b5cf6" style="--c:#8b5cf6" aria-label="Violeta"></button>
+      <button class="color-opt" data-color="#2f80ff" style="--c:#2f80ff" aria-label="Azul"></button>
+      <button class="color-opt" data-color="#10b981" style="--c:#10b981" aria-label="Verde"></button>
+      <button class="color-opt" data-color="#ef4444" style="--c:#ef4444" aria-label="Vermelho"></button>
+      <button class="color-opt" data-color="#f59e0b" style="--c:#f59e0b" aria-label="Laranja"></button>
+      <button class="color-opt custom" data-color="custom" aria-label="Cor personalizada">+</button>
+    </div>
+    <div id="customColorContainer" class="custom-color"><input type="color" id="customColorPicker" value="#8b5cf6" aria-label="Escolher cor" /></div>
+    <select id="fontSelect" aria-label="Fonte">
+      <option value="'Plus Jakarta Sans', sans-serif">Plus Jakarta Sans</option>
+      <option value="'Syne', sans-serif">Syne</option>
+      <option value="'Space Grotesk', sans-serif">Space Grotesk</option>
+      <option value="'Poppins', sans-serif">Poppins</option>
+      <option value="'JetBrains Mono', monospace">JetBrains Mono</option>
+    </select>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
